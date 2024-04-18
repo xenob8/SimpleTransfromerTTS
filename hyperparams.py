@@ -1,10 +1,10 @@
 class Hyperparams:
   seed = 42
 
-  csv_path = "/content/metadata.csv"
-  wav_path = "/content/LJSpeech-1.1/wavs"
-  save_path = "/content/gdrive/MyDrive/Colab Notebooks/toy_tts/params"  
-  log_path = "/content/gdrive/MyDrive/Colab Notebooks/toy_tts/train_logs"
+  csv_path = "/content/drive/MyDrive/datasets/metadata.csv"
+  wav_path = "/content/drive/MyDrive/datasets/LJSpeech-1.1/wavs"
+  save_path = "/content/drive/MyDrive/datasets/toy_tts/params"
+  log_path = "/content/drive/MyDrive/datasets/toy_tts/train_logs"
   
   save_name = "SimpleTransfromerTTS.pt"
 
@@ -59,9 +59,9 @@ class Hyperparams:
   lr = 2.0 * 1e-4
   r_gate = 1.0
 
-  step_print = 1000
-  step_test = 8000
-  step_save = 8000
+  step_print = 20
+  step_test = 20
+  step_save = 20
 
 hp = Hyperparams()
 
