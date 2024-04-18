@@ -7,7 +7,7 @@ class TTSLoss(torch.nn.Module):
         super(TTSLoss, self).__init__()
         
         self.mse_loss = torch.nn.MSELoss()
-        self.bce_loss = torch.nn.BCEWithLogitsLoss()
+        self.bce_loss = torch.nn.BCEWithLogitsLoss(pos_weight=torch.tensor([4]))
 
     def forward(
         self, 
